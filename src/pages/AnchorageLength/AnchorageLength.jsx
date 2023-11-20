@@ -1,5 +1,6 @@
 import { Container, CssBaseline, Box, Typography } from "@mui/material";
 import { useState } from "react";
+import { AlGeneralInfo } from "./AlGeneralInfo";
 
 // import { AlGeneralInfo } from "./AlGeneralInfo";
 // import { AlCalculationInfo } from "./AlCalculationInfo";
@@ -117,6 +118,9 @@ export function AnchorageLength() {
             <Berechnung setDataChild={setDataChild} />
             <Berechnungsprotokoll data={data} />
           </div> */}
+          <div>
+            <AlGeneralInfo />
+          </div>
         </Box>
       </Container>
     </>
