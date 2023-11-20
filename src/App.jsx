@@ -1,4 +1,5 @@
 import { MathJaxContext } from "better-react-mathjax";
+import { AnchorageLength } from "./pages/AnchorageLength/AnchorageLength";
 
 // defining config for MathJax
 // see react-better MathJax documentation
@@ -25,7 +26,9 @@ function App() {
       version={2}
       config={config}
       onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}
-    ></MathJaxContext>
+    >
+      <AnchorageLength />
+    </MathJaxContext>
   );
 }
 
