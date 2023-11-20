@@ -1,10 +1,11 @@
-import Container from "react-bootstrap/Container";
+import { Container, CssBaseline, Box, Typography } from "@mui/material";
 import { useState } from "react";
-import { AlGeneralInfo } from "./AlGeneralInfo";
-import { AlCalculationInfo } from "./AlCalculationInfo";
-import { AlForm } from "./AlForm";
-import { ImgAccordion } from "../../components/ImgAccordion";
-import { AlOutput } from "./AlOutput";
+
+// import { AlGeneralInfo } from "./AlGeneralInfo";
+// import { AlCalculationInfo } from "./AlCalculationInfo";
+// import { AlForm } from "./AlForm";
+// import { ImgAccordion } from "../../components/ImgAccordion";
+// import { AlOutput } from "./AlOutput";
 
 export function AnchorageLength() {
   const [data, setData] = useState({
@@ -89,20 +90,33 @@ export function AnchorageLength() {
 
   return (
     <>
-      <Container className="d-flex align-items-center justify-content-center flex-column mt-5">
-        <h1>Ersatzverankerungslänge</h1>
-        <AlGeneralInfo />
-        <AlCalculationInfo />
-        <ImgAccordion
-          imgLink="./imgs/verankerungsarten.png"
-          heading="Verankerungsarten"
-        />
-        <ImgAccordion
-          imgLink="./imgs/verbundbereich.png"
-          heading="Verbundbedingung"
-        />
-        <AlForm setDataChild={setDataChild} data={data} />
-        <AlOutput data={data} />
+      <CssBaseline />{" "}
+      <Container maxWidth="lg">
+        {" "}
+        <Box
+          sx={{
+            marginTop: 8,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <Typography
+            sx={{ paddingBottom: "1.5rem" }}
+            component="h3"
+            variant="h3"
+          >
+            Ersatzverankerungslänge
+          </Typography>{" "}
+          {/* <div>
+            {" "}
+            <Berechnungsansatz />
+            <Formeln />
+            <Berechnung setDataChild={setDataChild} />
+            <Berechnungsprotokoll data={data} />
+          </div> */}
+        </Box>
       </Container>
     </>
   );
