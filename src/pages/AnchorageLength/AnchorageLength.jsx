@@ -106,6 +106,7 @@ export function AnchorageLength() {
             sx={{ paddingBottom: "1.5rem" }}
             component="h3"
             variant="h3"
+            data-testid="anchorage-length"
           >
             Ersatzverankerungslänge
           </Typography>{" "}
