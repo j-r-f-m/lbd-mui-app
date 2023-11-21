@@ -59,10 +59,18 @@ export function AlGeneralInfo() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
           }}
         >
-          <Typography sx={{ padding: "1rem" }}>
+          <Typography
+            sx={{
+              paddingLeft: " 1rem",
+              paddingBottom: "1rem",
+              fontWeight: "Bold",
+            }}
+          >
+            Aus Wendehorst 2017, S. 391 ff
+          </Typography>
+          <Typography sx={{ paddingLeft: "1rem" }}>
             <MathJax>
               Formal wird im EC 2 zwischen dem Bemessungswert der
               Verankerungslänge {"\\(l_{bd}\\)"} und der sogenannten
